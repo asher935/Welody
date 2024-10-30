@@ -15,7 +15,7 @@ export default function SignIn() {
                         action={async (formData: FormData) => {
                             "use server"
                             try {
-                                await signIn("nodemailer", formData)
+                                await signIn("nodemailer", formData, { redirectTo: "/app" })
                             } catch (error) {
                                 if (error instanceof AuthError) {
                                     return redirect(`/signin?error=${error.message}`)
@@ -36,7 +36,7 @@ export default function SignIn() {
                     <form action={async () => {
                         "use server"
                         try {
-                            await signIn("google")
+                            await signIn("google", { redirectTo: "/app" })
                         } catch (error) {
                             if (error instanceof AuthError) {
                                 return redirect(`/signin?error=${error.message}`)

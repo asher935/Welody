@@ -22,9 +22,9 @@ const OPTIONS = {
         }),
         Google,
     ],
-    /*     pages: {
-            signIn: '../signin'
-        } */
+    pages: {
+        signIn: '../signin'
+    }
 
 }
 
