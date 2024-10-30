@@ -6,7 +6,7 @@ interface ThemedImageProps {
     darkSrc: string;
 }
 
-export default function ThemedImage({ alt, lightSrc, darkSrc }: ThemedImageProps) {
+export default function ThemedImage({ alt, lightSrc, darkSrc }: Readonly<ThemedImageProps>) {
     const common = { alt: alt, fill: true }
     const {
         props: { srcSet: dark },

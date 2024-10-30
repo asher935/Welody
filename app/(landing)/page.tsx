@@ -16,11 +16,7 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   const headersList = await headers()
-  var nonce = headersList.get('x-nonce')
-
-  if (!nonce) {
-    nonce = "temp string"
-  }
+  const nonce = headersList.get('x-nonce') ?? "temp"
 
   const session = await auth();
   return (

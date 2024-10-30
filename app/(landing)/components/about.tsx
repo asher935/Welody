@@ -5,9 +5,9 @@ import { motion, AnimatePresence, MotionConfig } from "framer-motion";
 
 
 
-import tutorial from '/public/mockups/Tutorial.png'
-import home from '/public/mockups/Home.png'
-import info from '/public/mockups/Info.png'
+import tutorial from '@/public/mockups/Tutorial.png'
+import home from '@/public/mockups/Home.png'
+import info from '@/public/mockups/Info.png'
 
 const feature1 = {
     src: tutorial,
@@ -43,7 +43,7 @@ let tabs = [
     { label: "Discover", elem: <Feature {...feature2} /> },
     { label: "Play", elem: <Feature {...feature3} /> }]
 
-export default function About({ nonce }: { nonce: string }) {
+export default function About({ nonce }: {readonly nonce: string }) {
     let [activeTab, setActiveTab] = useState(tabs[0])
     
     return (

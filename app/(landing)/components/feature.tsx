@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { desc } from '../interfaces/desc'
 
-export default function Feature({ src, alt, point1, point2, point3 }: desc) {
+export default function Feature({ src, alt, point1, point2, point3 }:  Readonly<desc>) {
     return (
         <div className='flex flex-col w-fit mx-auto'>
 

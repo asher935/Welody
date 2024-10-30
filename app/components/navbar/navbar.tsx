@@ -1,7 +1,6 @@
 "use client"
-import { useState, useEffect } from "react";
+
 import Image from "next/image";
-import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 import WelodyLogo from "../ui/WelodyLogo";
 
@@ -24,7 +23,7 @@ export default function Navbar() {
   return (
     <nav className="flex items-center px-4 fixed z-20 top-6 w-full text-sm md:text-md text-mine-950 dark:text-mine-50">
       <div className="flex flex-wrap w-full px-8 py-2 justify-between mx-auto max-w-screen-md backdrop-blur-md bg-mine-100 bg-opacity-70 dark:bg-mine-500 dark:bg-opacity-70 rounded-full">
-        <a href="" className="flex items-center space-x-3 rtl:space-x-reverse m-0">
+        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse m-0">
           <div className="max-w-24">
             <WelodyLogo/>
           </div>
