@@ -39,6 +39,11 @@ next-env.d.ts
 public/sw*
 public/swe-worker*
 certificates
+
+
 .env.development
 .env.production
 pnpm-lock.yaml
+
+#turborepo
+.turbo
