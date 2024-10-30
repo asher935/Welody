@@ -43,7 +43,6 @@ certificates
 
 .env.development
 .env.production
-pnpm-lock.yaml
 
 #turborepo
 .turbo
