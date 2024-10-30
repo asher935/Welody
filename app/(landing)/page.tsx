@@ -15,7 +15,8 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  var nonce = headers().get('x-nonce')
+  const headersList = await headers()
+  var nonce = headersList.get('x-nonce')
 
   if (!nonce) {
     nonce = "temp string"
